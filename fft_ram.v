@@ -1,8 +1,8 @@
-module fft_ram 		//dwuportowy, data inputy 16 bitowe, 
+module fft_ram 				//dwuportowy, data inputy 16 bitowe, 
 					//nie wiem ilubitowe sa addresy
 (
 	input [15:0] data_a, data_b,	//input z BFU
-	input [7:0] addr_a, addr_b,		//input z AGU
+	input [7:0] addr_a, addr_b,	//input z AGU
 	input wr_a, wr_b, clk,			
 	output reg [15:0] q_a, q_b
 );
